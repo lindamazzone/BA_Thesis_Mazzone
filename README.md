@@ -1,4 +1,4 @@
-# BachelorThesis-Mazzone
+# Bachelor Thesis Mazzone
 
 This GitHub repository includes all code used in the Bachelor Thesis. This includes scripts used for data extraction, filtering and modeling but also the one used to generate graphs and tables.
 All scripts were written by me, Linda Mazzone, as part of my Bachelor's thesis in Computational Linguistics, with the exception of "VoxCommunis_lexicon_countphonemes.py", which originates from the VoxCommunis project (written by Ishu Sutharsan) and was only adapted by me in a few places.
