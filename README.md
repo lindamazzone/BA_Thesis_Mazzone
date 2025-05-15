@@ -78,7 +78,7 @@ Python script to get quantitative values about the vowels studied in the Thesis:
 * **count_vowel_studied.py**
 
 To get the result the following files/folders are needed:
-* **filtered_csv**: folder with filtered csvs created in 2.1
+* **filtered_csv**: folder with filtered csv files created in 2.1
 
 Output:
 * The results are directly printed in the terminal.
@@ -89,7 +89,7 @@ Script to get a visual representation of the the expectation of vowel dispersion
 
 No other files are needed
 
-Output files:
+Output files/folders of the python script:
 * **vowel_inventory_ellipses_3.png**: Representation of the expectation of a three vowel inventory
 * **vowel_inventory_ellipses_12.png**: Representation of the expectation of a 12 vowel inventory
 
@@ -97,6 +97,19 @@ Output files:
 
 ## 3 - Linear Regression Models
 ### 3.1 Linear regression model for the full inventory
+Script to get the linear regression model and two scatter plots:
+* **model_mixed_regression_full_inventory.py**
+
+To get the result the following files/folders are needed:
+* **stats_output_full_inventory**: folder with the csv files generated in 2.2
+
+Output files/folders of the python script:
+* **model_results_f1_full.csv**: csv table with the results of the model for the standard deviation of F1
+* **model_results_f1_full.csv**: csv table with the results of the model for the standard deviation of F2
+* **F1_std_full_inventory.png**: scatterplot with the representation of the model results for he standard deviation of F1
+* **F1_std_full_inventory.png**: scatterplot with the representation of the model results for the standard deviation of F2
+
+
 
 
 
