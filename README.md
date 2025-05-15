@@ -45,7 +45,7 @@ To get the result the following files/folders are needed:
 * **filtered_csv**: folder created in 2.1
 
 Output files/folders of the python script:
-* **stats_output_full_inventory**: folder with the csv with the new information
+* **sd_output_full_inventory**: folder with the csv with the new information
 * **vowel_inventory_summary_full_inventory.csv**: A summarizing csv table with the following information vowel inventory, the number of vowels and weather it has schwa or not for each language
 
 #### 2.3.2 - For the Full inventory
@@ -61,7 +61,7 @@ To get the result the following files/folders are needed:
 * **filtered_csv**: folder created in 2.1
 
 Output files/folders of the python script:
-* **stats_output_base_inventory**: folder with the csv with the new information
+* **sd_output_base_inventory**: folder with the csv with the new information
 * **vowel_inventory_summary_base_inventory**.csv: A summarizing csv table with the following information vowel inventory, the number of vowels and weather it has schwa or not for each language
 
 ### 2.4 - Create a merged summary table
@@ -69,7 +69,7 @@ Python script to get a complete csv summary table of the standard deviation, the
 * **vowel_inventory_complete.py**
 
 To get the result the following files/folders are needed:
-* **stats_output_full_inventory** and **stats_output_base_inventory**: folders generated in 2.2
+* **sd_output_full_inventory** and **sd_output_base_inventory**: folders generated in 2.2
 * **vowel_inventory_summary_full_inventory.csv** and **vowel_inventory_summary_base_inventory.csv** : csv files generated in 2.2
 
 ### 2.5 - Quantitative values 
@@ -99,7 +99,7 @@ Script to get the linear regression model and two scatter plots:
 * **model_mixed_regression_full_inventory.py**
 
 To get the result the following files/folders are needed:
-* **stats_output_full_inventory**: folder with the csv files generated in 2.2
+* **sd_output_full_inventory**: folder with the csv files generated in 2.2
 
 Output files/folders of the python script:
 * **model_results_f1_full.csv**: csv table with the results of the model for the standard deviation of F1
@@ -112,7 +112,7 @@ Script to get the linear regression model and two scatter plots:
 * **model_mixed_regression_base_inventory.py**
 
 To get the result the following files/folders are needed:
-* **stats_output_base_inventory**: folder with the csv files generated in 2.2
+* **sd_output_base_inventory**: folder with the csv files generated in 2.2
 
 Output files/folders of the python script:
 * **model_results_f1_base.csv**: csv table with the results of the model for the standard deviation of F1
