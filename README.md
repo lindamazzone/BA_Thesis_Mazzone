@@ -31,7 +31,7 @@ Output files/folders of the python script:
 * **filtered_csv**: folder with the filtered csv files
 
 ### 2.2 - Get Standard Deviation and vowel count/inventory 
- 2.2.1 - For the Full inventory
+#### 2.2.1 - For the Full inventory
 Python script to generate the standard deviation, the vowel count and the vowel inventory of each langauge:
 * **get_std_full_inventory.py**
 
