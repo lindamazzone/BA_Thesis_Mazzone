@@ -6,9 +6,9 @@ All scripts were written by me, Linda Mazzone, as part of my Bachelor's thesis i
 There are 5 folders:
 1. missing_documentation_files: to create the missing documentation files
 2. filtering: The filtering process
-3. std: get the data about the standard deviation of F1 and F2
+3. std: get the data about the standard deviation of F1 and F2 and the summarizing tables about the vowel inventory
 4. linear_regression_models: scripts to run the models
-5. additional_information: scripts to get tables, figures and quantitative data.
+5. additional_information: scripts to get figures and quantitative data.
 6. data: all the data already existing and available to download from the VoxCommunis corpus
 
 ## How to run:
@@ -70,6 +70,15 @@ Output files/folders of the python script:
 * **std_output_base_inventory**: folder with the csv with the new information
 * **vowel_inventory_summary_base_inventory**.csv: A summarizing csv table with the following information vowel inventory, the number of vowels and weather it has schwa or not for each language
 
+### 3.3 - Create a merged summary table (base + full inventory)
+Python script to get a complete csv summary table of the standard deviation, the vowel count and the vowel inventory of each langauge::
+* **vowel_inventory_complete.py**
+
+To get the result the following files/folders are needed:
+* **std_output_full_inventory** and **std_output_base_inventory**: folders generated in 3.1
+* **vowel_inventory_summary_full_inventory.csv** and **vowel_inventory_summary_base_inventory.csv** : csv files generated in 3.2
+
+
 
 ## 4 - Linear Regression Models
 ### 4.1 Linear regression model for the full inventory
@@ -99,16 +108,8 @@ Output files/folders of the python script:
 * **F2_std_base_inventory.png**: scatterplot with the representation of the model results for the standard deviation of F2
 
 ## 5 Additional Information
-### 5.1 - Create a merged summary table
-Python script to get a complete csv summary table of the standard deviation, the vowel count and the vowel inventory of each langauge::
-* **vowel_inventory_complete.py**
 
-To get the result the following files/folders are needed:
-* **std_output_full_inventory** and **std_output_base_inventory**: folders generated in 3
-* **vowel_inventory_summary_full_inventory.csv** and **vowel_inventory_summary_base_inventory.csv** : csv files generated in 3
-
-
-### 5.2 - Quantitative values 
+### 5.1 - Quantitative values 
 Python script to get quantitative values about the vowels studied in the Thesis:
 * **count_vowel_studied.py**
 
@@ -118,7 +119,7 @@ To get the result the following files/folders are needed:
 Output:
 * The results are directly printed in the terminal.
 
-### 5.3 - Vowel Inventory Representations
+### 5.2 - Vowel Inventory Representations
 Script to get a visual representation of the the expectation of vowel dispersion based on the Vowel Dispersion Theory:
 * **vowel_inventory_ellipses.py**
 
