@@ -10,7 +10,7 @@ There are 5 folders:
 4. linear_regression_models: scripts to run the models
 5. additional_information: scripts to get figures and quantitative data.
 
-To run the codes there is also another folder needed with the source data from VoxCommunis
+To run the codes there is also another folder needed with the source data from VoxCommunis (since it is available online the data will not be uploaded)
 * data: all the data already existing and available to download from the VoxCommunis corpus
 
 ## How to run:
