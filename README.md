@@ -23,7 +23,7 @@ Python script to generate the filtered csv files:
 * **filter_csv.py**
 
 To get the result the following files/folders are needed:
-* **vxc_data**: Original csv files downloaded from xxxxxxx
+* **vxc_data**: Original csv files from VoxCommunis downloaded from xxxxxxx
 * **speaker_files**: files with all the speaker information from https://huggingface.co/datasets/pacscilab/VoxCommunis/tree/main/speaker_files
 * **vxc-speaker-scores4.txt**: file with the data to calculate the similarity score.
 
