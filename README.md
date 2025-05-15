@@ -82,7 +82,7 @@ To get the result the following files/folders are needed:
 Output:
 * The results are directly printed in the terminal.
 
-### 2.6 - Vowel Inventory Image
+### 2.6 - Vowel Inventory Representations
 Script to get a visual representation of the the expectation of vowel dispersion based on the Vowel Dispersion Theory:
 * **vowel_inventory_ellipses.py**
 
