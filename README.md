@@ -81,7 +81,7 @@ To get the result the following files/folders are needed:
 
 
 ## 4 - Linear Regression Models
-### 4.1 Linear regression model for the full inventory
+### 4.1 - Linear regression model for the full inventory
 Script to get the linear regression model and two scatter plots:
 * **model_mixed_regression_full_inventory.py**
 
@@ -94,7 +94,7 @@ Output files/folders of the python script:
 * **F1_std_full_inventory.png**: scatterplot with the representation of the model results for he standard deviation of F1
 * **F2_std_full_inventory.png**: scatterplot with the representation of the model results for the standard deviation of F2
 
-### 4.2 Linear regression model for the base inventory
+### 4.2 - Linear regression model for the base inventory
 Script to get the linear regression model and two scatter plots:
 * **model_mixed_regression_base_inventory.py**
 
@@ -107,7 +107,7 @@ Output files/folders of the python script:
 * **F1_std_base_inventory.png**: scatterplot with the representation of the model results for he standard deviation of F1
 * **F2_std_base_inventory.png**: scatterplot with the representation of the model results for the standard deviation of F2
 
-## 5 Additional Information
+## 5 - Additional Information
 
 ### 5.1 - Quantitative values 
 Python script to get quantitative values about the vowels studied in the Thesis:
