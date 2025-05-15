@@ -9,7 +9,9 @@ There are 5 folders:
 3. std: get the data about the standard deviation of F1 and F2 and the summarizing tables about the vowel inventory
 4. linear_regression_models: scripts to run the models
 5. additional_information: scripts to get figures and quantitative data.
-6. data: all the data already existing and available to download from the VoxCommunis corpus
+
+To run the codes there is also another folder needed with the source data from VoxCommunis
+* data: all the data already existing and available to download from the VoxCommunis corpus
 
 ## How to run:
 
