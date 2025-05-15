@@ -109,6 +109,19 @@ Output files/folders of the python script:
 * **F1_std_full_inventory.png**: scatterplot with the representation of the model results for he standard deviation of F1
 * **F1_std_full_inventory.png**: scatterplot with the representation of the model results for the standard deviation of F2
 
+### 3.2 Linear regression model for the base inventory
+Script to get the linear regression model and two scatter plots:
+* **model_mixed_regression_base_inventory.py**
+
+To get the result the following files/folders are needed:
+* **stats_output_base_inventory**: folder with the csv files generated in 2.2
+
+Output files/folders of the python script:
+* **model_results_f1_base.csv**: csv table with the results of the model for the standard deviation of F1
+* **model_results_f1_base.csv**: csv table with the results of the model for the standard deviation of F2
+* **F1_std_base_inventory.png**: scatterplot with the representation of the model results for he standard deviation of F1
+* **F1_std_base_inventory.png**: scatterplot with the representation of the model results for the standard deviation of F2
+
 
 
 
