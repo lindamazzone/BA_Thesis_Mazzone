@@ -2,21 +2,21 @@
 # Bachelor Thesis – Computational Linguistics: A Large-Scale, Cross-Linguistic Investigation of Vowel Dispersion
 # University of Zurich
 # Spring Semester 2025
-# Description: Script to get the mixed regression model of the full vowel inventory as well as representative tables
+# Description: Script to get the mixed regression model of the base vowel inventory as well as representative tables
 # and graphs
 # Note: This script was written as part of my Bachelor's thesis in Computational Linguistics.
-
 
 import pandas as pd
 import statsmodels.formula.api as smf
 import os
 import seaborn as sns
 import matplotlib.pyplot as plt
+from scipy.stats import linregress
 
 
 
 # Path to your stats_output folder
-std_data = '../std/std_output_full_inventory'
+std_data = '../std/std_output_base_inventory'
 
 # Empty list to collect dataframes
 all_dfs = []
@@ -54,7 +54,9 @@ md_F2 = smf.mixedlm(formula_F2, clean_data_F2, groups=clean_data_F2['language'])
 
 mdf_F1 = md_F1.fit()
 # mdf2 = md.fit(method="lbfgs")
-mdf_F2 = md_F2.fit()
+mdf_F2 = md_F2.fit(method="cg")
+
+
 # mdf2 = md.fit(method="lbfgs")
 
 
@@ -62,6 +64,7 @@ print("Summary for F1")
 # Summary output
 print(mdf_F1.summary())
 
+# Define new names for predictors
 name_map = {
     'Intercept': 'Intercept',
     'number_of_vowels': 'Number of vowels',
@@ -71,6 +74,7 @@ name_map = {
     'Group Var': 'Group Var'
 }
 
+# Apply the mapping
 
 results_df_F1 = pd.DataFrame({
     'Predictor': mdf_F1.params.index,
@@ -88,7 +92,8 @@ results_df_F1['Predictor'] = results_df_F1['Predictor'].replace(name_map)
 
 
 # print(results_df_F1)
-results_df_F1.to_csv('model_results_f1_full.csv', index=False)
+results_df_F1.to_csv('model_results_f1_base.csv', index=False)
+
 
 print("________________________________________________________________________")
 print("Summary for F2")
@@ -96,6 +101,7 @@ print("Summary for F2")
 # Summary output
 print(mdf_F2.summary())
 # print(mdf2.summary())
+
 
 
 results_df_F2 = pd.DataFrame({
@@ -109,12 +115,12 @@ results_df_F2 = pd.DataFrame({
 
 # Round for clarity
 results_df_F2['p-value'] = results_df_F2['p-value'].apply(lambda x: "< 0.0001" if 0 <= x < 0.0001 else round(x, 3))
+
 results_df_F2 = results_df_F2.round(3)
 results_df_F2['Predictor'] = results_df_F1['Predictor'].replace(name_map)
 
-
 # print(results_df_F2)
-results_df_F2.to_csv('model_results_f2_full.csv', index=False)
+results_df_F2.to_csv('model_results_f2_base.csv', index=False)
 
 
 
@@ -128,10 +134,10 @@ summary = data.groupby('language').agg({
 }).reset_index()
 
 
-
 sns.set(style="whitegrid", font_scale=1.1)
 
 def plot_scatter(x, y, data, title, xlabel, ylabel, filename):
+    slope, intercept, r_value, p_value, std_err = linregress(data[x], data[y])
     plt.figure(figsize=(8,6))
     sns.regplot(x=x, y=y, data=data, scatter_kws={'s': 60}, line_kws={'color': 'red'})
     plt.title(title)
@@ -140,29 +146,28 @@ def plot_scatter(x, y, data, title, xlabel, ylabel, filename):
     plt.tight_layout()
     plt.savefig(filename, dpi=300)  # Save with high resolution
     plt.show()
+    print(f"{title} — Slope: {slope:.3f}, p-value: {p_value:.3f}, R²: {r_value**2:.3f}")
 
 
-# 3. F1_std vs number_of_vowels_v2
+# 1. F1_std vs number_of_vowels
 plot_scatter(
     x='number_of_vowels',
     y='F1_std',
     data=summary,
-    title='Standard Deviation of F1 vs Number of Vowels (Full Inventory)',
+    title='Standard Deviation of F1 vs Number of Vowels (Base Inventory)',
     xlabel='Number of Vowels',
     ylabel='F1 Standard Deviation (Hz)',
-    filename='F1_std_full_inventory'
+    filename='F1_std_base_inventory'
 )
 
 
-# 4. F2_std vs number_of_vowels_v2
+# 2. F2_std vs number_of_vowels
 plot_scatter(
     x='number_of_vowels',
     y='F2_std',
     data=summary,
-    title='Standard Deviation of F2 vs Number of Vowels (Full Inventory)',
+    title='Standard Deviation of F2 vs Number of Vowels (Base Inventory)',
     xlabel='Number of Vowels',
     ylabel='F2 Standard Deviation (Hz)',
-    filename='F2_std_full_inventory'
+    filename='F2_std_base_inventory'
 )
-
-
