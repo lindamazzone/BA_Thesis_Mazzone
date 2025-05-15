@@ -4,7 +4,7 @@ This GitHub repository includes all code used in the Bachelor Thesis. This inclu
 All scripts were written by me, Linda Mazzone, as part of my Bachelor's thesis in Computational Linguistics, with the exception of "VoxCommunis_lexicon_countphonemes.py", which originates from the VoxCommunis project (written by Ishu Sutharsan) and was only adapted by me in a few places.
 
 There are 5 folders:
-1. missing_documentation_files: to create the missing documentation files
+1. missing_documentation_files: script to create the missing documentation files (lexicon folder needed in the same directory)
 2. filtering: The filtering process
 3. std: get the data about the standard deviation of F1 and F2 and the summarizing tables about the vowel inventory
 4. linear_regression_models: scripts to run the models
