@@ -31,7 +31,7 @@ Output files/folders of the python script:
 * **filtered_csv**: folder with the filtered csv files
 
 ### 2.2 - Get Standard Deviation and vowel count/inventory 
-#### For the Full inventory
+ 2.2.1 - For the Full inventory
 Python script to generate the standard deviation, the vowel count and the vowel inventory of each langauge:
 * **get_std_full_inventory.py**
 
@@ -43,12 +43,11 @@ To get the result the following files/folders are needed:
   - **vxc_data/it_v17_dur_f0_formants.csv**: original csv file for Italian to get the vowel inventory and count (file is needed to run the script)
 * **filtered_csv**: folder created in 2.1
 
-
 Output files/folders of the python script:
 * **stats_output_full_inventory**: folder with the csv with the new information
 * **vowel_inventory_summary_full_inventory.csv**: A summarizing csv table with the following information vowel inventory, the number of vowels and weather it has schwa or not for each language
 
-#### For the Full inventory
+#### 2.2.2 - For the Full inventory
 Python script to generate the standard deviation, the vowel count and the vowel inventory of each langauge:
 * **get_std_base_inventory.py**
 
@@ -59,7 +58,6 @@ To get the result the following files/folders are needed:
   For the languages without a documentation file I created them (see 1) and added them to the folder while for italian the inforamtion was directly sourced from the original csv file:
   - **vxc_data/it_v17_dur_f0_formants.csv**: original csv file for Italian to get the vowel inventory and count (file is needed to run the script)
 * **filtered_csv**: folder created in 2.1
-
 
 Output files/folders of the python script:
 * **stats_output_base_inventory**: folder with the csv with the new information
@@ -92,7 +90,6 @@ No other files are needed
 Output files/folders of the python script:
 * **vowel_inventory_ellipses_3.png**: Representation of the expectation of a three vowel inventory
 * **vowel_inventory_ellipses_12.png**: Representation of the expectation of a 12 vowel inventory
-
 
 
 ## 3 - Linear Regression Models
