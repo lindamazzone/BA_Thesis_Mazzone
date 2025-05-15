@@ -73,7 +73,7 @@ To get the result the following files/folders are needed:
 * **stats_output_full_inventory** and **stats_output_base_inventory**: folders generated in 2.2
 * **vowel_inventory_summary_full_inventory.csv** and **vowel_inventory_summary_base_inventory.csv** : csv files generated in 2.2
 
-### 2.4 - Get quantitative values 
+### 2.4 - Quantitative values 
 Python script to get quantitative values about the vowels studied in the Thesis:
 * **count_vowel_studied.py**
 
@@ -82,6 +82,18 @@ To get the result the following files/folders are needed:
 
 Output:
 * The results are directly printed in the terminal.
+
+### 2.5 - Vowel Inventory Image
+Script to get a visual representation of the the expectation of vowel dispersion based on the Vowel Dispersion Theory:
+* **vowel_inventory_ellipses.py**
+
+No other files are needed
+
+Output files:
+* **vowel_inventory_ellipses_3.png**: Representation of the expectation of a three vowel inventory
+* **vowel_inventory_ellipses_12.png**: Representation of the expectation of a 12 vowel inventory
+
+
 
 ## 3 - Linear Regression Models
 ### 3.1 Linear regression model for the full inventory
