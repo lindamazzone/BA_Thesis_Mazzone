@@ -7,7 +7,7 @@ All scripts were written by me, Linda Mazzone, as part of my Bachelor's thesis i
 ## How to run:
 
 
-## 1 - Filtering, Standard Deviation, Graphs and Tables
+## 1 - Filtering
 
 ### 1.1 - Missing documentation files
 Python script to generate the missing documentation files:
@@ -31,8 +31,8 @@ To get the result the following files/folders are needed:
 Output files/folders of the python script:
 * **filtered_csv**: folder with the filtered csv files
 
-### 2.3 - Get Standard Deviation and vowel count/inventory 
-#### 2.3.1 - For the Full inventory
+## 2 - Standard Deviation
+### 2.1 - For the Full inventory
 Python script to generate the standard deviation, the vowel count and the vowel inventory of each langauge:
 * **get_std_full_inventory.py**
 
@@ -42,13 +42,13 @@ To get the result the following files/folders are needed:
   - Downloaded from https://github.com/pacscilab/voxcommunis/tree/main/vxc-documentation
   For the languages without a documentation file I created them (see 1) and added them to the folder while for italian the inforamtion was directly sourced from the original csv file:
   - **vxc_data/it_v17_dur_f0_formants.csv**: original csv file for Italian to get the vowel inventory and count (file is needed to run the script)
-* **filtered_csv**: folder created in 2.1
+* **filtered_csv**: folder created in 1.2
 
 Output files/folders of the python script:
 * **std_output_full_inventory**: folder with the csv with the new information
 * **vowel_inventory_summary_full_inventory.csv**: A summarizing csv table with the following information vowel inventory, the number of vowels and weather it has schwa or not for each language
 
-#### 2.3.2 - For the Full inventory
+### 2.2 - For the Full inventory
 Python script to generate the standard deviation, the vowel count and the vowel inventory of each langauge:
 * **get_std_base_inventory.py**
 
@@ -58,39 +58,11 @@ To get the result the following files/folders are needed:
   - Downloaded from https://github.com/pacscilab/voxcommunis/tree/main/vxc-documentation
   For the languages without a documentation file I created them (see 1) and added them to the folder while for italian the inforamtion was directly sourced from the original csv file:
   - **vxc_data/it_v17_dur_f0_formants.csv**: original csv file for Italian to get the vowel inventory and count (file is needed to run the script)
-* **filtered_csv**: folder created in 2.1
+* **filtered_csv**: folder created in 1.2
 
 Output files/folders of the python script:
 * **std_output_base_inventory**: folder with the csv with the new information
 * **vowel_inventory_summary_base_inventory**.csv: A summarizing csv table with the following information vowel inventory, the number of vowels and weather it has schwa or not for each language
-
-### 2.4 - Create a merged summary table
-Python script to get a complete csv summary table of the standard deviation, the vowel count and the vowel inventory of each langauge::
-* **vowel_inventory_complete.py**
-
-To get the result the following files/folders are needed:
-* **std_output_full_inventory** and **std_output_base_inventory**: folders generated in 2.2
-* **vowel_inventory_summary_full_inventory.csv** and **vowel_inventory_summary_base_inventory.csv** : csv files generated in 2.2
-
-### 2.5 - Quantitative values 
-Python script to get quantitative values about the vowels studied in the Thesis:
-* **count_vowel_studied.py**
-
-To get the result the following files/folders are needed:
-* **filtered_csv**: folder with filtered csv files created in 2.1
-
-Output:
-* The results are directly printed in the terminal.
-
-### 2.6 - Vowel Inventory Representations
-Script to get a visual representation of the the expectation of vowel dispersion based on the Vowel Dispersion Theory:
-* **vowel_inventory_ellipses.py**
-
-No other files are needed
-
-Output files/folders of the python script:
-* **vowel_inventory_ellipses_3.png**: Representation of the expectation of a three vowel inventory
-* **vowel_inventory_ellipses_12.png**: Representation of the expectation of a 12 vowel inventory
 
 
 ## 3 - Linear Regression Models
@@ -99,7 +71,7 @@ Script to get the linear regression model and two scatter plots:
 * **model_mixed_regression_full_inventory.py**
 
 To get the result the following files/folders are needed:
-* **std_output_full_inventory**: folder with the csv files generated in 2.2
+* **std_output_full_inventory**: folder with the csv files generated in 2.1
 
 Output files/folders of the python script:
 * **model_results_f1_full.csv**: csv table with the results of the model for the standard deviation of F1
@@ -120,7 +92,35 @@ Output files/folders of the python script:
 * **F1_std_base_inventory.png**: scatterplot with the representation of the model results for he standard deviation of F1
 * **F2_std_base_inventory.png**: scatterplot with the representation of the model results for the standard deviation of F2
 
+## 4 Additional Information
+### 4.1 - Create a merged summary table
+Python script to get a complete csv summary table of the standard deviation, the vowel count and the vowel inventory of each langauge::
+* **vowel_inventory_complete.py**
 
+To get the result the following files/folders are needed:
+* **std_output_full_inventory** and **std_output_base_inventory**: folders generated in 2
+* **vowel_inventory_summary_full_inventory.csv** and **vowel_inventory_summary_base_inventory.csv** : csv files generated in 2
+
+
+### 4.2 - Quantitative values 
+Python script to get quantitative values about the vowels studied in the Thesis:
+* **count_vowel_studied.py**
+
+To get the result the following files/folders are needed:
+* **filtered_csv**: folder with filtered csv files created in 2.1
+
+Output:
+* The results are directly printed in the terminal.
+
+### 4.3 - Vowel Inventory Representations
+Script to get a visual representation of the the expectation of vowel dispersion based on the Vowel Dispersion Theory:
+* **vowel_inventory_ellipses.py**
+
+No other files are needed
+
+Output files/folders of the python script:
+* **vowel_inventory_ellipses_3.png**: Representation of the expectation of a three vowel inventory
+* **vowel_inventory_ellipses_12.png**: Representation of the expectation of a 12 vowel inventory
 
 
 
