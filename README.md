@@ -9,7 +9,7 @@ All scripts were written by me, Linda Mazzone, as part of my Bachelor's thesis i
 
 ## 1 - Filtering, Standard Deviation, Graphs and Tables
 
-## 1.1 - Missing documentation files
+### 1.1 - Missing documentation files
 Python script to generate the missing documentation files:
 * **VoxCommunis_lexicon_countphonemes.py**
 
