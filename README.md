@@ -14,7 +14,7 @@ There are 5 folders:
 6. get_formant : script by Miao Zhang to get the formant values
 
 To run the codes there is also another folder needed with the source data from VoxCommunis (since it is available online the data will not be uploaded)
-* data: all the data already existing and available to download from the VoxCommunis corpus
+* data: The folder "vxc-data" is uploaded since it is not yet published. All the remaining already existing and available data to download from the VoxCommunis corpus is not uploaded in the GitHub since it is freely available. 
 
 ## How to run:
 
