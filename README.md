@@ -2,8 +2,8 @@
 
 This GitHub repository includes all code used in the Bachelor Thesis. This includes scripts used for data extraction, filtering and modeling but also the one used to generate graphs and tables.
 All scripts were written by me, Linda Mazzone, as part of my Bachelor's thesis in Computational Linguistics, with the exception of 
-* "VoxCommunis_lexicon_countphonemes.py", which originates from the VoxCommunis project, written by Ishu Sutharsan, and was only adapted by me in a few places
-* "vxc_get_dur_f0_formants.py", used to extract the formants values, which originates from the VoxCommunis project, written by Miao Zhang.
+* **"VoxCommunis_lexicon_countphonemes.py"**, which originates from the VoxCommunis project, written by Ishu Sutharsan, and was only adapted by me in a few places
+* **"vxc_get_dur_f0_formants.py"**, used to extract the formants values, which originates from the VoxCommunis project, written by Miao Zhang.
 
 There are 5 folders:
 1. missing_documentation_files: script to create the missing documentation files (lexicon folder needed in the same directory)
