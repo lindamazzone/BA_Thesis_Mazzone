@@ -1,7 +1,9 @@
 # Bachelor Thesis Mazzone
 
 This GitHub repository includes all code used in the Bachelor Thesis. This includes scripts used for data extraction, filtering and modeling but also the one used to generate graphs and tables.
-All scripts were written by me, Linda Mazzone, as part of my Bachelor's thesis in Computational Linguistics, with the exception of "VoxCommunis_lexicon_countphonemes.py", which originates from the VoxCommunis project (written by Ishu Sutharsan) and was only adapted by me in a few places.
+All scripts were written by me, Linda Mazzone, as part of my Bachelor's thesis in Computational Linguistics, with the exception of 
+* "VoxCommunis_lexicon_countphonemes.py", which originates from the VoxCommunis project, written by Ishu Sutharsan, and was only adapted by me in a few places
+* "vxc_get_dur_f0_formants.py", used to extract the formants values, which originates from the VoxCommunis project, written by Miao Zhang.
 
 There are 5 folders:
 1. missing_documentation_files: script to create the missing documentation files (lexicon folder needed in the same directory)
@@ -9,6 +11,7 @@ There are 5 folders:
 3. std: get the data about the standard deviation of F1 and F2 and the summarizing tables about the vowel inventory
 4. linear_regression_models: scripts to run the models
 5. additional_information: scripts to get figures and quantitative data.
+6. get_formant : script by Miao Zhang to get the formant values
 
 To run the codes there is also another folder needed with the source data from VoxCommunis (since it is available online the data will not be uploaded)
 * data: all the data already existing and available to download from the VoxCommunis corpus
@@ -32,9 +35,9 @@ Python script to generate the filtered csv files from the original one:
 * **filter_csv.py**
 
 To get the result the following files/folders are needed:
-* **vxc_data**: Original csv files from VoxCommunis downloaded from xxxxxxx
+* **vxc_data**: Original csv files from VoxCommunis, not yet published.
 * **speaker_files**: files with all the speaker information from https://huggingface.co/datasets/pacscilab/VoxCommunis/tree/main/speaker_files
-* **vxc-speaker-scores4.txt**: file with the data to calculate the similarity score from xxxx
+* **vxc-speaker-scores4.txt**: file with the data to calculate the similarity score, not yet published.
 
 Output files/folders of the python script:
 * **filtered_csv**: folder with the filtered csv files
