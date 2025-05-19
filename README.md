@@ -14,7 +14,7 @@ There are 5 folders:
 6. get_formant : script by Miao Zhang to get the formant values
 
 To run the codes there is also another folder needed with the source data from VoxCommunis (since it is available online the data will not be uploaded)
-* data: The folder "vxc-data" is uploaded since it is not yet published. All the remaining already existing and available data to download from the VoxCommunis corpus is not uploaded in the GitHub since it is freely available. 
+* data: All the already existing and available data to download from the VoxCommunis corpus is not uploaded in the GitHub since it is freely available. 
 
 ## How to run:
 
@@ -35,9 +35,9 @@ Python script to generate the filtered csv files from the original one:
 * **filter_csv.py**
 
 To get the result the following files/folders are needed:
-* **vxc_data**: Original csv files from VoxCommunis, not yet published.
+* **vxc_data**: Original csv files from VoxCommunis, xxxxxx.
 * **speaker_files**: files with all the speaker information from https://huggingface.co/datasets/pacscilab/VoxCommunis/tree/main/speaker_files
-* **vxc-speaker-scores4.txt**: file with the data to calculate the similarity score, not yet published.
+* **vxc-speaker-scores4.txt**: file with the data to calculate the similarity score, xxxxxxxxx.
 
 Output files/folders of the python script:
 * **filtered_csv**: folder with the filtered csv files
