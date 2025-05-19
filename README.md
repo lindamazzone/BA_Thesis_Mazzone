@@ -64,7 +64,7 @@ Python script to generate the standard deviation, the vowel count and the vowel 
 * **get_std_base_inventory.py**
 
 To get the result the following files/folders are needed:
-* **vxc_data**: folder with the original csv files downloaded from xxxxxxx
+* **vxc_data**: folder with the original csv files.
 * **vxc-documentation**: folder with the documentation files to get the inventory and vowel count
   - Downloaded from https://github.com/pacscilab/voxcommunis/tree/main/vxc-documentation
   For the languages without a documentation file I created them (see 1) and added them to the folder while for italian the inforamtion was directly sourced from the original csv file:
