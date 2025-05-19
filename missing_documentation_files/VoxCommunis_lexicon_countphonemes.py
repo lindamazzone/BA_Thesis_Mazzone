@@ -1,3 +1,10 @@
+# Bachelor Thesis – Computational Linguistics: A Large-Scale, Cross-Linguistic Investigation of Vowel Dispersion
+# University of Zurich
+# Spring Semester 2025
+# Description: Script to get the missing documentation files
+# Author: Ishu Sutharsan
+# Note: This script was written by Ishu Sutharsan and kindly made available for this thesis.
+
 import os
 from ipapy import is_valid_ipa
 
