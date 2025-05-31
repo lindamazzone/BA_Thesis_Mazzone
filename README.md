@@ -14,7 +14,11 @@ There are 5 folders:
 6. get_formant : script by Miao Zhang to get the formant values
 
 To run the codes there is also another folder needed with the source data from VoxCommunis (since it is available online the data will not be uploaded)
-* data: All the already existing and available data to download from the VoxCommunis corpus is not uploaded in the GitHub since it is freely available. 
+* data: All the already existing and available data to download from the VoxCommunis corpus is not uploaded in the GitHub since it is freely available including:
+   - speaker_files: https://huggingface.co/datasets/pacscilab/VoxCommunis/tree/main/speaker_files
+   - vxc_data: https://github.com/pacscilab/CV_clientID_cleaning
+   - vxc_documentation: https://github.com/pacscilab/voxcommunis/tree/main/vxc-documentation (in the same folder I also added manually the missing documentation files later created in 1 - Missing documentation files)
+   - vxc-speaker-scores4.txt: https://huggingface.co/datasets/pacscilab/VoxCommunis/blob/main/similarity_scores.txt
 
 ## How to run:
 
