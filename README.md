@@ -35,9 +35,9 @@ Python script to generate the filtered csv files from the original one:
 * **filter_csv.py**
 
 To get the result the following files/folders are needed:
-* **vxc_data**: Original csv files from VoxCommunis, xxxxxx.
+* **vxc_data**: Original csv files from VoxCommunis, https://github.com/pacscilab/CV_clientID_cleaning
 * **speaker_files**: files with all the speaker information from https://huggingface.co/datasets/pacscilab/VoxCommunis/tree/main/speaker_files
-* **vxc-speaker-scores4.txt**: file with the data to calculate the similarity score, xxxxxxxxx.
+* **vxc-speaker-scores4.txt**: file with the data to calculate the similarity score, from https://huggingface.co/datasets/pacscilab/VoxCommunis/blob/main/similarity_scores.txt
 
 Output files/folders of the python script:
 * **filtered_csv**: folder with the filtered csv files
